@@ -14,7 +14,7 @@ const registerUser= asyncHandler(async (req, res)=>{
     //remove password and refresh token from response (as mongodb returns all the created entries as response)
     //check for user registration
     //return response
-
+    console.log("BODY:", req.body);
     const {fullName, username, email, password}= req.body
 
     if(

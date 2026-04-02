@@ -1,0 +1,26 @@
+$kind: http-request
+name: register user
+method: POST
+url: '{{base_url}}/api/v1/users/register'
+order: 1000
+body:
+  type: formdata
+  content:
+    - key: fullName
+      type: text
+      value: Bhavesh Jat
+    - key: username
+      type: text
+      value: bvs123
+    - key: email
+      type: text
+      value: bvs@gmail.com
+    - key: password
+      type: text
+      value: 'bvs#iSM'
+    - key: avatar
+      type: file
+      src: ''
+    - key: coverImage
+      type: file
+      src: ''
